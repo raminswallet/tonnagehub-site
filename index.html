@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TonnageHub is an independent and discreet commercial vessel S&P sourcing desk.">
+  <meta name="theme-color" content="#0a1322">
+  <title>TonnageHub | Commercial Vessel S&P Sourcing</title>
+
+  <style>
+    :root {
+      --bg: #08111f;
+      --panel: #0e1b2d;
+      --line: #22344b;
+      --text: #edf3f8;
+      --muted: #9eafc2;
+      --accent: #b9d4e8;
+      --button: #dbeaf4;
+      --button-text: #0a1322;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, #142b43 0, transparent 38%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      width: min(960px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    header {
+      padding: 34px 0 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      letter-spacing: .22em;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .brand-sub {
+      color: var(--muted);
+      font-size: .78rem;
+      margin-top: 7px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    main {
+      padding: 82px 0 70px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: .78rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      line-height: 1.05;
+      font-weight: 500;
+      letter-spacing: -.045em;
+      margin: 0 0 25px;
+    }
+
+    .lead {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin-bottom: 55px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .card {
+      background: rgba(14, 27, 45, .86);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin: 0 0 15px;
+    }
+
+    p {
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    ul {
+      color: var(--muted);
+      padding-left: 20px;
+      margin: 20px 0 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    label {
+      color: var(--accent);
+      font-size: .82rem;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      margin-top: 6px;
+      padding: 12px 13px;
+      color: var(--text);
+      background: #091524;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 1px solid var(--accent);
+      border-color: var(--accent);
+    }
+
+    button {
+      margin-top: 8px;
+      padding: 13px 18px;
+      border: 0;
+      border-radius: 5px;
+      background: var(--button);
+      color: var(--button-text);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: white;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: .78rem;
+      color: #8194aa;
+    }
+
+    footer {
+      padding: 25px 0 35px;
+      border-top: 1px solid var(--line);
+      color: #8194aa;
+      font-size: .82rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        padding-top: 55px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">TONNAGEHUB</div>
+      <div class="brand-sub">Independent Commercial Vessel S&amp;P Sourcing Desk</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="eyebrow">Discrete sourcing · selected tonnage</div>
+
+      <h1>Quiet access to commercial vessel opportunities.</h1>
+
+      <p class="lead">
+        TonnageHub is an independent and discreet sourcing desk for selected
+        commercial vessels and qualified buyer requirements. We do not operate
+        as a public listing marketplace or use broadcast marketing. Enquiries
+        are handled confidentially on a transaction-by-transaction basis.
+      </p>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Selected focus</h2>
+          <p>
+            Commercial vessels and buyer requirements are reviewed selectively,
+            subject to owner, seller or appointed broker confirmation.
+          </p>
+
+          <ul>
+            <li>Commercial reefer vessels</li>
+            <li>Fishing, freezer and longliner vessels</li>
+            <li>Tugs, ASD tugs and workboats</li>
+            <li>AHTS and offshore support vessels</li>
+            <li>Selected cargo and coastal vessels</li>
+          </ul>
+
+          <p class="note">
+            Far East · China · Korea · Japan · Russian maritime trade
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Submit a confidential enquiry</h2>
+          <p>
+            Please provide your requirement or vessel information. Relevant
+            details are reviewed discreetly and shared selectively.
+          </p>
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c4b0f0e7-761d-4892-ad63-87d748c6c373">
+            <input type="hidden" name="subject" value="New Confidential Requirement - TonnageHub">
+
+            <label>
+              I am contacting you as
+              <select name="role" required>
+                <option value="">Select one</option>
+                <option>Buyer</option>
+                <option>Direct Buyer's Representative</option>
+                <option>Shipowner / Seller</option>
+                <option>Owner's Direct Representative</option>
+                <option>Broker / Intermediary</option>
+              </select>
+            </label>
+
+            <label>
+              Asset category
+              <select name="asset_category" required>
+                <option value="">Select one</option>
+                <option>Commercial Reefer</option>
+                <option>Fishing / Freezer / Longliner</option>
+                <option>Tug / ASD Tug</option>
+                <option>AHTS / Offshore Support</option>
+                <option>General Cargo / Coaster</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label>
+              Vessel requirement or offering
+              <textarea name="vessel_details" required
+                placeholder="Type, build year, DWT / GT / CBM / HP, class, flag, location and other details"></textarea>
+            </label>
+
+            <label>
+              Target budget / price guidance
+              <input type="text" name="budget" placeholder="Optional">
+            </label>
+
+            <label>
+              Operating region / delivery area
+              <input type="text" name="region" placeholder="Optional">
+            </label>
+
+            <label>
+              Name
+              <input type="text" name="name" required>
+            </label>
+
+            <label>
+              Company / entity
+              <input type="text" name="company" placeholder="Optional">
+            </label>
+
+            <label>
+              Business email
+              <input type="email" name="email" required>
+            </label>
+
+            <label>
+              WhatsApp / Telegram
+              <input type="text" name="messaging" placeholder="Optional">
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" placeholder="Additional information"></textarea>
+            </label>
+
+            <button type="submit">SUBMIT CONFIDENTIAL ENQUIRY</button>
+
+            <div class="note">
+              Do not submit passwords, payment details, passport copies or
+              highly sensitive documents through this form.
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>Operated by R. Salamati</div>
+      <div>Independent Commercial Vessel S&amp;P Broker</div>
+      <div>
+        Direct contact:
+        <a href="mailto:ramin@tonnagehub.com">ramin@tonnagehub.com</a>
+      </div>
+      <p class="note">
+        TonnageHub is not a shipowner, technical certifier, legal adviser,
+        escrow agent or custodian of purchase funds. Vessel information and
+        availability remain subject to confirmation by the relevant owner or
+        appointed broker.
+      </p>
+      <div>© 2026 TonnageHub. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
