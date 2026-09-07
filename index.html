@@ -124,14 +124,25 @@
       margin: 0 0 16px;
     }
 
-    ul {
-      color: var(--muted);
-      padding-left: 20px;
-      margin: 20px 0 0;
+    .focus-list {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
-    li {
-      margin: 8px 0;
+    .focus-item h3 {
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0 0 4px 0;
+    }
+
+    .focus-item p {
+      font-size: .88rem;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
     }
 
     form {
@@ -322,17 +333,43 @@
         <section class="card">
           <h2>Selected focus</h2>
           <p>
-            Commercial vessels and buyer requirements are reviewed selectively,
-            subject to owner, seller or appointed broker confirmation.
+            Independent sourcing and Sale &amp; Purchase coordination for selected commercial vessels and verified buyer requirements across established maritime markets.
           </p>
 
-          <ul>
-            <li>Commercial reefer vessels</li>
-            <li>Fishing, freezer and longliner vessels</li>
-            <li>Tugs, ASD tugs and workboats</li>
-            <li>AHTS and offshore support vessels</li>
-            <li>Selected cargo and coastal vessels</li>
-          </ul>
+          <div class="focus-list">
+            <div class="focus-item">
+              <h3>Commercial reefer vessels</h3>
+              <p>Cargo reefers and refrigerated carriers for frozen, chilled and temperature-controlled cargoes.</p>
+            </div>
+
+            <div class="focus-item">
+              <h3>Fishing, freezer and longliner vessels</h3>
+              <p>Tuna longliners, fishing vessels, freezer vessels and specialized fishery-related units.</p>
+            </div>
+
+            <div class="focus-item">
+              <h3>Tugs, ASD tugs and workboats</h3>
+              <p>Harbour, coastal and utility vessels for towing, port services and marine support.</p>
+            </div>
+
+            <div class="focus-item">
+              <h3>AHTS and offshore support vessels</h3>
+              <p>Anchor-handling, towing, supply and offshore support vessels.</p>
+            </div>
+
+            <div class="focus-item">
+              <h3>Selected cargo and coastal vessels</h3>
+              <p>General cargo, multipurpose and coastal vessels considered against specific buyer requirements.</p>
+            </div>
+          </div>
+
+          <p>
+            We review both vessel availability and buyer requirements selectively. Particulars, technical condition, commercial terms and availability remain subject to confirmation by the relevant owner, Seller or appointed broker.
+          </p>
+
+          <p>
+            Buyer enquiries are handled discreetly, and information is shared progressively according to the relevance of the requirement and the confirmation available from the represented party.
+          </p>
 
           <p class="note">
             Far East · China · Korea · Japan · Russian maritime trade
