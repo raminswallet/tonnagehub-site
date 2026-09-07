@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TonnageHub is an independent and discreet commercial vessel S&P sourcing desk.">
+  <meta name="description" content="Tonnage Hub is an independent and discreet commercial vessel S&P sourcing desk.">
   <meta name="theme-color" content="#0a1322">
   <title>Tonnage Hub | Commercial Vessel S&P Sourcing</title>
 
@@ -199,11 +199,65 @@
       color: #8194aa;
     }
 
+    /* Refined Footer Styles */
     footer {
-      padding: 25px 0 35px;
+      padding: 35px 0 30px;
       border-top: 1px solid var(--line);
       color: #8194aa;
       font-size: .82rem;
+      background: rgba(6, 13, 24, 0.4);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .footer-operator {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .operator-title {
+      color: var(--text);
+      font-weight: 600;
+      font-size: .88rem;
+      letter-spacing: .02em;
+    }
+
+    .operator-sub {
+      color: var(--accent);
+      font-size: .78rem;
+      letter-spacing: .05em;
+    }
+
+    .footer-disclaimer {
+      line-height: 1.55;
+      font-size: .76rem;
+      color: #728498;
+    }
+
+    .footer-bottom {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px dashed rgba(34, 52, 75, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .75rem;
+      color: #617387;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: #34d399;
+      border-radius: 50%;
+      margin-right: 6px;
     }
 
     @media (max-width: 760px) {
@@ -217,6 +271,17 @@
 
       .card {
         padding: 22px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
       }
     }
   </style>
@@ -370,17 +435,24 @@
 
   <footer>
     <div class="wrap">
-      <div>Operated by R. Salamati</div>
-      <div>Independent Commercial Vessel S&amp;P Broker</div>
+      <div class="footer-grid">
+        <div class="footer-operator">
+          <div class="operator-title">Operated by R. Salamati</div>
+          <div class="operator-sub">Independent Commercial Vessel S&amp;P Broker</div>
+        </div>
 
-      <p class="note">
-        Tonnage Hub is not a shipowner, technical certifier, legal adviser,
-        escrow agent or custodian of purchase funds. Vessel information and
-        availability remain subject to confirmation by the relevant owner or
-        appointed broker.
-      </p>
+        <div class="footer-disclaimer">
+          Tonnage Hub is not a shipowner, technical certifier, legal adviser,
+          escrow agent or custodian of purchase funds. Vessel information and
+          availability remain subject to confirmation by the relevant owner or
+          appointed broker.
+        </div>
+      </div>
 
-      <div>© 2026 Tonnage Hub. All rights reserved.</div>
+      <div class="footer-bottom">
+        <div><span class="status-dot"></span>S&amp;P Desk Active</div>
+        <div>© 2026 Tonnage Hub. All rights reserved.</div>
+      </div>
     </div>
   </footer>
 </body>
