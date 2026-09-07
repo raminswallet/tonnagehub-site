@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="TonnageHub is an independent and discreet commercial vessel S&P sourcing desk.">
   <meta name="theme-color" content="#0a1322">
-  <title>TonnageHub | Commercial Vessel S&P Sourcing</title>
+  <title>Tonnage Hub | Commercial Vessel S&P Sourcing</title>
 
   <style>
     :root {
@@ -39,20 +39,34 @@
     }
 
     header {
-      padding: 34px 0 20px;
+      padding: 28px 0 20px;
       border-bottom: 1px solid var(--line);
     }
 
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    /* Minimalist Maritime Hull Logo */
+    .brand-logo {
+      width: 32px;
+      height: 32px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
     .brand {
-      letter-spacing: .22em;
-      font-size: 1.1rem;
+      letter-spacing: .24em;
+      font-size: 1.15rem;
       font-weight: 700;
     }
 
     .brand-sub {
       color: var(--muted);
       font-size: .78rem;
-      margin-top: 7px;
+      margin-top: 6px;
       letter-spacing: .08em;
       text-transform: uppercase;
     }
@@ -171,7 +185,6 @@
       background: white;
     }
 
-    /* Honeypot anti-spam trap */
     .trap {
       position: absolute;
       left: -9999px;
@@ -212,8 +225,18 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="brand">TONNAGEHUB</div>
-      <div class="brand-sub">Independent Commercial Vessel S&amp;P Sourcing Desk</div>
+      <div class="brand-container">
+        <!-- SVG Vector Logo representing maritime hull / vessel lines -->
+        <svg class="brand-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 14L18 28L32 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 9L18 19L28 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 0"/>
+          <line x1="4" y1="32" x2="32" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div class="brand">TONNAGE HUB</div>
+          <div class="brand-sub">Independent Commercial Vessel S&amp;P Sourcing Desk</div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -224,7 +247,7 @@
       <h1>Quiet access to commercial vessel opportunities.</h1>
 
       <p class="lead">
-        TonnageHub is an independent and discreet sourcing desk for selected
+        Tonnage Hub is an independent and discreet sourcing desk for selected
         commercial vessels and qualified buyer requirements. We do not operate
         as a public listing marketplace or use broadcast marketing. Enquiries
         are handled confidentially on a transaction-by-transaction basis.
@@ -260,7 +283,7 @@
 
           <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="c4b0f0e7-761d-4892-ad63-87d748c6c373">
-            <input type="hidden" name="subject" value="New Confidential Requirement - TonnageHub">
+            <input type="hidden" name="subject" value="New Confidential Requirement - Tonnage Hub">
 
             <label>
               I am contacting you as
@@ -328,7 +351,6 @@
               <textarea name="message" placeholder="Additional information"></textarea>
             </label>
 
-            <!-- Honeypot Bot Trap -->
             <label class="trap" aria-hidden="true">
               Leave this field empty
               <input type="text" name="website" tabindex="-1" autocomplete="off">
@@ -352,13 +374,13 @@
       <div>Independent Commercial Vessel S&amp;P Broker</div>
 
       <p class="note">
-        TonnageHub is not a shipowner, technical certifier, legal adviser,
+        Tonnage Hub is not a shipowner, technical certifier, legal adviser,
         escrow agent or custodian of purchase funds. Vessel information and
         availability remain subject to confirmation by the relevant owner or
         appointed broker.
       </p>
 
-      <div>© 2026 TonnageHub. All rights reserved.</div>
+      <div>© 2026 Tonnage Hub. All rights reserved.</div>
     </div>
   </footer>
 </body>
