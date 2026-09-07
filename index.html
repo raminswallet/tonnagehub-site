@@ -91,28 +91,11 @@
       margin: 0 0 25px;
     }
 
-    /* Hero section layout with artistic logo watermark */
-    .hero-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 36px;
-    }
-
     .lead {
-      max-width: 680px;
+      max-width: 700px;
       color: var(--muted);
       font-size: 1.08rem;
-      margin: 0;
-    }
-
-    .hero-artistic-logo {
-      width: 140px;
-      height: 140px;
-      color: var(--accent);
-      opacity: 0.12;
-      flex-shrink: 0;
+      margin-bottom: 36px;
     }
 
     .grid {
@@ -127,6 +110,8 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 28px;
+      display: flex;
+      flex-direction: column;
     }
 
     h2 {
@@ -159,6 +144,23 @@
       color: var(--muted);
       margin: 0;
       line-height: 1.5;
+    }
+
+    /* Large Watermark Emblem at Bottom of Left Card */
+    .card-watermark-container {
+      margin-top: 35px;
+      padding-top: 25px;
+      border-top: 1px dashed rgba(34, 52, 75, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-watermark-logo {
+      width: 220px;
+      height: 220px;
+      color: var(--accent);
+      opacity: 0.08;
     }
 
     form {
@@ -292,22 +294,17 @@
         padding-top: 40px;
       }
 
-      .hero-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-      }
-
-      .hero-artistic-logo {
-        display: none;
-      }
-
       .grid {
         grid-template-columns: 1fr;
       }
 
       .card {
         padding: 22px;
+      }
+
+      .card-watermark-logo {
+        width: 150px;
+        height: 150px;
       }
 
       .footer-grid {
@@ -348,21 +345,12 @@
 
       <h1>Quiet access to commercial vessel opportunities.</h1>
 
-      <div class="hero-container">
-        <p class="lead">
-          Tonnage Hub is an independent and discreet sourcing desk for selected
-          commercial vessels and qualified buyer requirements. We do not operate
-          as a public listing marketplace or use broadcast marketing. Enquiries
-          are handled confidentially on a transaction-by-transaction basis.
-        </p>
-
-        <!-- Scaled artistic watermark logo -->
-        <svg class="hero-artistic-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 14L18 28L32 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M8 9L18 19L28 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <line x1="4" y1="32" x2="32" y2="32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-        </svg>
-      </div>
+      <p class="lead">
+        Tonnage Hub is an independent and discreet sourcing desk for selected
+        commercial vessels and qualified buyer requirements. We do not operate
+        as a public listing marketplace or use broadcast marketing. Enquiries
+        are handled confidentially on a transaction-by-transaction basis.
+      </p>
 
       <div class="grid">
         <section class="card">
@@ -409,6 +397,15 @@
           <p class="note">
             Far East · China · Korea · Japan · Russian maritime trade
           </p>
+
+          <!-- Large Watermark Logo filling the bottom left empty space -->
+          <div class="card-watermark-container">
+            <svg class="card-watermark-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 14L18 28L32 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 9L18 19L28 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="4" y1="32" x2="32" y2="32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
         </section>
 
         <section class="card">
