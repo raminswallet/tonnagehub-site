@@ -58,7 +58,7 @@
     }
 
     main {
-      padding: 82px 0 70px;
+      padding: 48px 0 58px;
     }
 
     .eyebrow {
@@ -82,7 +82,7 @@
       max-width: 700px;
       color: var(--muted);
       font-size: 1.08rem;
-      margin-bottom: 55px;
+      margin-bottom: 36px;
     }
 
     .grid {
@@ -171,6 +171,15 @@
       background: white;
     }
 
+    /* Honeypot anti-spam trap */
+    .trap {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
     .note {
       margin-top: 15px;
       font-size: .78rem;
@@ -184,14 +193,9 @@
       font-size: .82rem;
     }
 
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
     @media (max-width: 760px) {
       main {
-        padding-top: 55px;
+        padding-top: 40px;
       }
 
       .grid {
@@ -324,6 +328,12 @@
               <textarea name="message" placeholder="Additional information"></textarea>
             </label>
 
+            <!-- Honeypot Bot Trap -->
+            <label class="trap" aria-hidden="true">
+              Leave this field empty
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </label>
+
             <button type="submit">SUBMIT CONFIDENTIAL ENQUIRY</button>
 
             <div class="note">
@@ -340,16 +350,14 @@
     <div class="wrap">
       <div>Operated by R. Salamati</div>
       <div>Independent Commercial Vessel S&amp;P Broker</div>
-      <div>
-        Direct contact:
-        <a href="mailto:ramin@tonnagehub.com">ramin@tonnagehub.com</a>
-      </div>
+
       <p class="note">
         TonnageHub is not a shipowner, technical certifier, legal adviser,
         escrow agent or custodian of purchase funds. Vessel information and
         availability remain subject to confirmation by the relevant owner or
         appointed broker.
       </p>
+
       <div>© 2026 TonnageHub. All rights reserved.</div>
     </div>
   </footer>
