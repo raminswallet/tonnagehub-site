@@ -95,7 +95,19 @@
       max-width: 700px;
       color: var(--muted);
       font-size: 1.08rem;
-      margin-bottom: 36px;
+      margin-bottom: 32px;
+    }
+
+    .vessel-image {
+      display: block;
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: center;
+      margin: 0 0 32px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      opacity: .9;
     }
 
     .grid {
@@ -146,7 +158,6 @@
       line-height: 1.5;
     }
 
-    /* Large Watermark Emblem at Bottom of Left Card */
     .card-watermark-container {
       margin-top: 35px;
       padding-top: 25px;
@@ -228,7 +239,6 @@
       color: #8194aa;
     }
 
-    /* Refined Footer Styles */
     footer {
       padding: 35px 0 30px;
       border-top: 1px solid var(--line);
@@ -294,6 +304,11 @@
         padding-top: 40px;
       }
 
+      .vessel-image {
+        height: 185px;
+        margin-bottom: 24px;
+      }
+
       .grid {
         grid-template-columns: 1fr;
       }
@@ -325,12 +340,12 @@
   <header>
     <div class="wrap">
       <div class="brand-container">
-        <!-- SVG Vector Logo representing maritime hull / vessel lines -->
         <svg class="brand-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 14L18 28L32 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M8 9L18 19L28 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 0"/>
           <line x1="4" y1="32" x2="32" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
+
         <div>
           <div class="brand">TONNAGE HUB</div>
           <div class="brand-sub">Independent Commercial Vessel S&amp;P Sourcing Desk</div>
@@ -352,11 +367,20 @@
         are handled confidentially on a transaction-by-transaction basis.
       </p>
 
+      <img
+        class="vessel-image"
+        src="oil%20tanker.jpg"
+        alt="Commercial tanker vessel at sea"
+      >
+
       <div class="grid">
         <section class="card">
           <h2>Selected focus</h2>
+
           <p>
-            Independent sourcing and Sale &amp; Purchase coordination for selected commercial vessels and verified buyer requirements across established maritime markets.
+            Independent sourcing and Sale &amp; Purchase coordination for
+            selected commercial vessels and verified buyer requirements across
+            established maritime markets.
           </p>
 
           <div class="focus-list">
@@ -387,18 +411,22 @@
           </div>
 
           <p>
-            We review both vessel availability and buyer requirements selectively. Particulars, technical condition, commercial terms and availability remain subject to confirmation by the relevant owner, Seller or appointed broker.
+            We review both vessel availability and buyer requirements
+            selectively. Particulars, technical condition, commercial terms and
+            availability remain subject to confirmation by the relevant owner,
+            Seller or appointed broker.
           </p>
 
           <p>
-            Buyer enquiries are handled discreetly, and information is shared progressively according to the relevance of the requirement and the confirmation available from the represented party.
+            Buyer enquiries are handled discreetly, and information is shared
+            progressively according to the relevance of the requirement and the
+            confirmation available from the represented party.
           </p>
 
           <p class="note">
             Far East · China · Korea · Japan · Russian maritime trade
           </p>
 
-          <!-- Large Watermark Logo filling the bottom left empty space -->
           <div class="card-watermark-container">
             <svg class="card-watermark-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 14L18 28L32 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -410,6 +438,7 @@
 
         <section class="card">
           <h2>Submit a confidential enquiry</h2>
+
           <p>
             Please provide your requirement or vessel information. Relevant
             details are reviewed discreetly and shared selectively.
@@ -446,8 +475,11 @@
 
             <label>
               Vessel requirement or offering
-              <textarea name="vessel_details" required
-                placeholder="Type, build year, DWT / GT / CBM / HP, class, flag, location and other details"></textarea>
+              <textarea
+                name="vessel_details"
+                required
+                placeholder="Type, build year, DWT / GT / CBM / HP, class, flag, location and other details"
+              ></textarea>
             </label>
 
             <label>
